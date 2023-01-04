@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spade</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .spade {
+            height: 50px;
+            width: 50px;
+            background: black;
+            transform: rotate(45deg);
+            position: relative;
+            display: inline-block;
+        }
+
+        .spade::before,
+        .spade::after {
+            width: 50px;
+            height: 50px;
+            background: black;
+            position: absolute;
+            content: "";
+            border-radius: 50%;
+        }
+
+        .spade::before {
+            top: 23px;
+        }
+
+        .spade::after {
+            right: -23px;
+        }
+
+        .tail {
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-top: 31px solid #000000;
+            transform: rotate(180deg);
+            top: 332px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <span class="spade"></span>
+        <span class="tail"></span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-MAS TREE</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 618px;
+            position: relative;
+        }
+
+        .top_1,
+        .top_2,
+        .top_3,
+        .root {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            z-index: -3;
+        }
+
+        .top_1 {
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 70px solid #306d35;
+        }
+
+        .top_2 {
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 85px solid #306d35;
+            top: 309px;
+        }
+
+        .top_3 {
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #306d35;
+            top: 348px;
+        }
+
+        .root {
+            width: 9px;
+            height: 70px;
+            background: #306d35;
+            top: 435px;
+        }
+
+        .root_1 {
+            width: 90px;
+            height: 3px;
+            background: #121e13;
+            top: 502px;
+            position: absolute;
+        }
+
+        .bubble_1 {
+            display: inline-block;
+            width: 17px;
+            height: 17px;
+            background-color: #ff0c0c;
+            border-radius: 50%;
+            top: 265px;
+            position: absolute;
+        }
+
+        .light1,
+        .light3,
+        .light5,
+        .light7 {
+            width: 2px;
+            height: 2px;
+            background-color: blue;
+            position: absolute;
+            display: inline-block;
+            border-radius: 50%;
+            animation-name: light_1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        .light2,
+        .light4,
+        .light6,
+        .light8 {
+            width: 2px;
+            height: 2px;
+            background-color: blue;
+            position: absolute;
+            display: inline-block;
+            border-radius: 50%;
+            animation-name: light_2;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+
+        .light1 {
+            top: 321px;
+            left: 228px;
+        }
+
+        .light2 {
+            top: 307px;
+            left: 210px;
+        }
+
+        .light3 {
+            top: 318px;
+            left: 170px;
+        }
+
+        .light4 {
+            top: 280px;
+            left: 170px;
+        }
+
+        .light5 {
+            top: 266px;
+            left: 208px;
+        }
+
+        .light6 {
+            top: 215px;
+            left: 185px;
+        }
+
+        .light7 {
+            top: 230px;
+            left: 200px;
+        }
+
+        .light8 {
+            top: 196px;
+            left: 200px;
+        }
+
+        .light {
+            border: 3px;
+            width: 400px;
+            height: 400px;
+            background: transparent;
+            position: relative;
+            z-index: -1;
+            display: block;
+        }
+
+        .ribon_1,
+        .ribon_2,
+        .ribon_3,
+        .ribon_4 {
+            width: 0.5px;
+            height: 8px;
+            position: absolute;
+            display: inline-block;
+            background-color: red;
+        }
+
+        .ribon_1 {
+            left: 249px;
+            top: 339px;
+        }
+
+        .ribon_2 {
+            left: 238px;
+            top: 285px;
+        }
+
+        .ribon_3 {
+            top: 285px;
+            left: 160px;
+        }
+
+        .ribon_4 {
+            top: 235px;
+            left: 228px;
+        }
+
+        .ring_1,
+        .ring_2,
+        .ring_3,
+        .ring_4 {
+            display: inline-block;
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .ring_1 {
+            left: 247px;
+            top: 344px;
+        }
+
+        .ring_2 {
+            left: 236px;
+            top: 289px;
+        }
+
+        .ring_3 {
+            top: 290px;
+            left: 158px;
+        }
+
+        .ring_4 {
+            top: 240px;
+            left: 226px;
+        }
+
+        .gift_1 {
+            display: inline-block;
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background: blueviolet;
+            left: 220px;
+            top: 386px;
+        }
+
+        .gift_2 {
+            display: inline-block;
+            position: absolute;
+            width: 10px;
+            height: 3px;
+            background: rgb(43, 186, 226);
+            left: 222px;
+            top: 383px;
+        }
+
+        @keyframes light_1 {
+            0% {
+                background-color: blue;
+                box-shadow: 0px 0px 2px blue;
+            }
+
+            20% {
+                background-color: red;
+            }
+
+            40% {
+                background-color: rgb(4, 197, 245);
+            }
+
+            60% {
+                background-color: rgb(247, 5, 150);
+            }
+
+            80% {
+                background-color: orangered;
+                box-shadow: 0px 0px 2px orangered;
+            }
+
+            100% {
+                background-color: blue;
+            }
+        }
+
+        @keyframes light_2 {
+            0% {
+                background-color: red;
+            }
+
+            20% {
+                background-color: blue;
+                box-shadow: 0px 0px 2px blue;
+            }
+
+            40% {
+                background-color: rgb(247, 5, 150);
+            }
+
+            60% {
+                background-color: rgb(4, 197, 245);
+            }
+
+            80% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: orangered;
+                box-shadow: 0px 0px 2px orangered;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <span class="top_1"></span>
+        <span class="top_2"></span>
+        <span class="top_3"></span>
+        <span class="bubble_1"></span>
+        <span class="root"></span>
+        <span class="root_1"></span>
+        <div class="light">
+            <span class="ribon_1"></span>
+            <span class="ring_1"></span>
+            <span class="ribon_2"></span>
+            <span class="ring_2"></span>
+            <span class="ribon_3"></span>
+            <span class="ring_3"></span>
+            <span class="ribon_4"></span>
+            <span class="ring_4"></span>
+            <span class="light1"></span>
+            <span class="light2"></span>
+            <span class="light3"></span>
+            <span class="light4"></span>
+            <span class="light5"></span>
+            <span class="light6"></span>
+            <span class="light7"></span>
+            <span class="light8"></span>
+            <span class="gift_1"></span>
+            <span class="gift_2"></span>
+        </div>
+    </div>
+</body>
+
+</html>

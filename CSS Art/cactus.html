@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Gift</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .canvas {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fcf1f1;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .circle {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80vmin;
+            height: 80vmin;
+            border-radius: 50%;
+            background: #f9e0ae;
+        }
+
+        .pot {
+            position: absolute;
+            border-bottom: 25vmin solid #835050;
+            border-left: 7vmin solid transparent;
+            border-right: 7vmin solid transparent;
+            height: 0;
+            width: 40vmin;
+            transform: rotate(180deg);
+            bottom: 12vmin;
+            border-radius: 2vmin;
+        }
+
+        .pot::after {
+            content: "";
+            position: absolute;
+            width: 26vmin;
+            height: 1vmin;
+            background: black;
+        }
+
+        .eyes {
+            position: absolute;
+            width: 4vmin;
+            height: 4vmin;
+            background: black;
+            border-radius: 50%;
+            bottom: -15vmin;
+            right: 18vmin;
+            box-shadow: 15vmin 0 black;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0% {transform: scale(1, 0.1);}
+            100% {transform: scale(1, 1);}
+        }
+
+        .cheeks {
+            position: absolute;
+            width: 5vmin;
+            height: 2.5vmin;
+            background: red;
+            border-radius: 50%;
+            top: 9vmin;
+            left: 2vmin;
+            opacity: 20%;
+            box-shadow: 17vmin 0 red;
+        }
+
+        .mouth {
+            position: absolute;
+            width: 4vmin;
+            height: 4vmin;
+            top: 8vmin;
+            left: 11vmin;
+            border-radius: 50%;
+            background: transparent;
+            border-top: 1vmin solid black;
+        }
+
+        .cactus {
+            position: absolute;
+            width: 15vmin;
+            height: 30vmin;
+            background: #799351;
+            border-radius: 45%;
+            top: 17vmin;
+            left: 25vmin;
+            border: 1vmin solid black;
+        }
+
+        .cactus::before {
+            position: absolute;
+            content: "";
+            width: 5vmin;
+            height: 30vmin;
+            left: 5vmin;
+            background: transparent;
+            border-radius: 50%;
+            border-right: 1vmin solid #335d2d;
+        }
+
+        .cactus::after {
+            content: "";
+            position: absolute;
+            width: 5vmin;
+            height: 30vmin;
+            right: 5vmin;
+            background: transparent;
+            border-radius: 50%;
+            border-left: 1vmin solid #335d2d;
+        }
+
+        .cactusSmall {
+            position: absolute;
+            width: 17vmin;
+            height: 20vmin;
+            right: 28vmin;
+            background-color: #799351;
+            border-radius: 50%;
+            border: 1vmin solid black;            
+        }
+
+        .cactusSmall::before {
+            position: absolute;
+            content: "";
+            width: 5vmin;
+            height: 20vmin;
+            left: 5vmin;
+            background: transparent;
+            border-radius: 50%;
+            border-right: 1vmin solid #335d2d;
+        }
+
+        .cactusSmall::after {
+            content: "";
+            position: absolute;
+            width: 5vmin;
+            height: 20vmin;
+            right: 5vmin;
+            background: transparent;
+            border-radius: 50%;
+            border-left: 1vmin solid #335d2d;
+        }
+
+        .prickes {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 1vmin solid transparent;
+            border-right: 1vmin solid transparent;
+            border-bottom: 5vmin solid #335d2d;
+            transform: rotate(-59deg);
+        }
+
+        .prickes::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 8vmin;
+            left: 6vmin;
+            border-left: 1vmin solid transparent;
+            border-right: 1vmin solid transparent;
+            border-bottom: 5vmin solid #335d2d;
+            transform: rotate(106deg);
+        }
+
+        .prickes::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 5vmin;
+            left: -11vmin;
+            border-left: 1vmin solid transparent;
+            border-right: 1vmin solid transparent;
+            border-bottom: 5vmin solid #335d2d;
+            transform: rotate(-9deg);
+        }
+
+        .pricksRight {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 1vmin solid transparent;
+            border-right: 1vmin solid transparent;
+            border-bottom: 5vmin solid #335d2d;
+            transform: rotate(-59deg);
+        }
+
+        .pricksRight::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 13vmin;
+            left: 2vmin;
+            border-left: 1vmin solid transparent;
+            border-right: 1vmin solid transparent;
+            border-bottom: 5vmin solid #335d2d;
+            transform: rotate(140deg);
+        }
+
+        .pricksRight::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 2vmin;
+            left: -8vmin;
+            border-left: 1vmin solid transparent;
+            border-right: 1vmin solid transparent;
+            border-bottom: 5vmin solid #335d2d;
+            transform: rotate(-9deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="canvas">
+        <div class="circle">
+
+            <div class="cactus">
+                <div class="prickes"></div>
+            </div>
+
+            <div class="cactusSmall">
+                <div class="pricksRight">
+
+                </div>
+            </div>
+
+            <div class="pot">
+                <div class="eyes"></div>
+                <div class="cheeks"></div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
