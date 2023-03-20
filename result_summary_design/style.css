@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34em;
+    box-shadow: 1px 1px 12px 2px #e1e5f2;
+    border-radius: 16px;
+}
+div.first-col {
+    width: 50%;
+    height: auto;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 16px;
+    padding: 1.3em 2em;
+}
+div.title {
+    font-size: 0.8rem;
+}
+div.score {
+    width: 8em;
+    padding: 1em;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+div.score span {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+div.second-col {
+    width: 50%;
+    height: auto;
+}
+div.second-col {
+    padding: 1.2em;
+}
+div.summary {
+    color: rgb(54, 54, 54);
+}
+div.item {
+    display: flex;
+    justify-content: space-between;
+    padding: .6em .4em;
+    margin: .4em 0;
+    border-radius: 4px;
+}
+div.react {
+    background-color: hsl(0deg 100% 93.22%);
+}
+div.mem {
+    background-color: hsl(39deg 71.88% 92.53%);
+}
+div.ver {
+    background-color: hsl(166deg 100% 89.06%);
+}
+div.vis {
+    background-color: hsl(241, 100%, 89%);
+}
+div.des {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.reaction {
+    color: hsl(0, 100%, 67%);
+}
+div.memory {
+    color: hsl(39, 100%, 56%);
+}
+div.visual {
+    color: hsl(234, 85%, 45%);
+}
+div.verbal {
+    color: hsl(166, 100%, 37%);
+}
+
+div.submit {
+    display: flex;
+    justify-content: center;
+}
+button {
+    border: none;
+    padding: 0.8em 1.2em;
+    width: 100%;
+    border-radius: 20rem;
+    background: #414174;
+    color: white;
+    margin-top: 1.2em;
+}
+
+@media screen and (max-width: 500px) {
+    div.container {
+        display: block;
+    }
+    div.result {
+        flex-direction: column;
+        box-shadow: none;
+
+    }
+    div.first-col {
+        width: 100%;
+        border-radius: 0 0 16px 16px;
+
+    }
+    div.second-col {
+        width: 100%;
+    }
+}
