@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Modal</title>
+  </head>
+  <body>
+    <div>
+      <button id="modal_btn">Show Modal</button>
+    </div>
+    <dialog id="modal_box">
+      <div class="top_side">
+        <button id="close_modal">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="alert_box">
+        <span class="success_icon"
+          ><i class="fa-regular fa-circle-check fa-4x"></i
+        ></span>
+        <div class="alert_content">
+          <p>Modal loaded successfully</p>
+          <button class="click_btn">Click here</button>
+        </div>
+      </div>
+    </dialog>
+    <div>
+      <a href="https://blog.webdevsimplified.com/2023-04/html-dialog/"
+        >Resource</a
+      >
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

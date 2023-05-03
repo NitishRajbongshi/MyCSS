@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+dialog {
+  border: none;
+  background-color: rgb(236 255 239 / 50%);
+  padding: 0.5rem;
+  width: 24rem;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.alert_box,
+.top_side,
+.alert_content {
+  display: flex;
+  align-items: center;
+}
+.alert_box,
+.alert_content {
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1.3rem;
+}
+
+.alert_content {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.top_side {
+  flex-direction: row;
+  justify-content: end;
+  padding: 0 0.3rem;
+}
+.top_side span {
+  color: green;
+}
+span.success_icon {
+  color: green;
+}
+
+button#close_modal {
+  color: red;
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.click_btn {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: green;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+dialog::backdrop {
+  background-color: white;
+}
