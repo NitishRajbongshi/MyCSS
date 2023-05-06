@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: rgb(248, 231, 238);
+  background: linear-gradient(
+    90deg,
+    rgba(248, 231, 238, 1) 0%,
+    rgba(243, 240, 220, 1) 48%,
+    rgba(200, 220, 243, 1) 100%
+  );
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    height: 24rem;
+    width: 28rem;
+    background: white;
+    box-shadow: 0 5px 12px 0 rgba(0, 0, 0, .3);
+    padding: 3rem;
+}
+
+div.logo {
+    margin-bottom: 1rem;
+}
+
+div.email {
+    color: rgb(97, 95, 95);
+}
+
+i.back-arrow {
+    padding: .4rem;
+    font-size: .7rem;
+}
+
+i.back-arrow:hover {
+    background-color: rgb(224, 223, 223);
+    border-radius: 50%;
+    color: black;
+}
+
+.content > p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: rgb(61, 60, 60);
+}
+
+div.notification {
+    display: flex;
+    align-items: start;
+    color: rgb(84 84 84)
+}
+
+div.notification div p {
+    margin: 0;
+    padding: 0 .3rem;
+}
+
+div.input_field {
+    margin: 1rem 0;
+}
+
+div.input_field input {
+    border: 0;
+    border-bottom: 1px solid blue;
+    width: 100%;
+    font-size: 1rem;
+    padding: .5rem 0;
+}
+
+div.input_field input:focus {
+    outline: none;
+}
+
+div.checkbox_field {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin: 1.3rem 0;
+}
+
+div.checkbox_field input {
+    width: auto;
+    text-align: start;
+}
+
+div.button {
+    display: flex;
+    justify-content: end;
+}
+
+div.button button {
+    border: none;
+    padding: .4rem 1.4rem;
+    margin-left: .2rem;
+    font-size: 1rem;
+}
+
+button.verify {
+    background-color: #3d3dfe;
+    color: white;
+}
+
+button.cancel {
+    background-color: #d6d6d6;
+}
+
+div.button button:hover {
+    cursor: pointer;
+}
