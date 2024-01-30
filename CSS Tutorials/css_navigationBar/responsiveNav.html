@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(70, 66, 66);
+        overflow: hidden;
+    }
+    ul.topnav li {
+        float: left;
+    }
+    li a{
+        text-decoration: none;
+        padding: 12px 15px;
+        display: block;
+        color: rgb(240, 236, 231);
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    li a:hover:not(.active) {
+        background-color: black;
+    }
+    li a.active {
+        background-color: rgb(155, 218, 92);
+    }
+
+    /* responsive media */
+    @media screen and (max-width: 400px) {
+        ul.topnav li {
+            float: none;
+        }
+    }
+    </style>
+</head>
+<body>
+    <ul class="topnav">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltips</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        div.tooltip {
+            position: relative;
+            border-bottom: 1px solid gray;
+            display: inline-block;
+        }
+
+        span.tooltiptext {
+            visibility: hidden;
+            position: absolute;
+            background-color: #4fa0f5;
+            color: white;
+            width: 120px;
+            text-align: center;
+            border: 1px solid darkgray;
+            border-radius: 20px;
+            padding: 5px 11px;
+            top: -6px;
+        }
+
+        div.tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tooltip in HTML</h1>
+    <div class="tooltip">Hover me to see tooltip
+        <span class="tooltiptext">This is tooltip text</span>
+    </div>
+</body>
+
+</html>

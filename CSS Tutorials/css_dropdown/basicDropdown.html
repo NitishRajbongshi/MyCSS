@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <style>
+        div.dropdown {
+            display: inline-block;
+            position: relative;
+            /* needed when we want the dropdown content to be placed right below the dropdown button */
+        }
+        /* style the hoverable content */
+        div.dropdown button.hoverable {
+            border: 1px solid gray;
+            padding: 12px 15px;
+            background-color: burlywood;
+        }
+        button.hoverable:hover {
+            box-shadow: 3px 3px 4px rgb(75, 71, 71);
+            font-weight: bold;
+            border: none;
+        }
+        div.drop-content {
+            display: none; /*will hide the content*/
+            position: absolute;/* content will placed below the button */
+            z-index: 1; 
+            min-width: 120px;
+            background-color: rgb(195, 219, 159);
+            padding: 15px 18px;
+            box-shadow: 3px 3px 4px rgb(75, 71, 71);
+            margin-top: 2px; /*to make gap between the content and the button*/
+        }
+        div.dropdown:hover .drop-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="hoverable">Mouse Over Me.</button>
+        <div class="drop-content">
+            <p>Hello World!</p>
+        </div>
+    </div>
+</body>
+</html>

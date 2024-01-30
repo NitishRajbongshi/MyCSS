@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+        }
+        /* header design */
+        header {
+            background-color: gray;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* navbar design */
+        nav {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(169, 180, 184);
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            padding: 18px 25px;
+        }
+        nav a:hover {
+            background-color: rgb(141, 140, 140);
+        }
+
+        /* main content design */
+        section {
+            display: flex;
+            flex-direction: row;
+            text-align: start;
+            text-indent: 12px;
+            flex-wrap: wrap;
+        }
+
+        section > div {
+            padding: 10px;
+        }
+
+        #col-1 {
+            flex: 25%;
+            background-color: lightgray;
+        }
+
+        #col-2 {
+            flex: 55%;
+            background-color: rgb(184, 184, 184);
+        }
+
+        #col-3 {
+            flex: 20%;
+            background-color: rgb(216, 206, 206);
+        }
+
+        footer {
+            text-align: center;
+            background-color: gray;
+            padding: 10px 0;
+        }
+
+        @media screen and (max-width: 800px) {
+            #col-3 {
+                flex: 100%;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            nav,
+            section {
+                flex-direction: column;
+            }    
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </header>
+
+    <!-- navbar -->
+    <nav>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+    </nav>
+
+    <!-- main content -->
+    <main>
+        <section>
+            <div id="col-1">
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente esse officiis dolores quibusdam illum quos laboriosam harum. Fuga consectetur illum dolorem maxime cumque placeat ipsam repellat minima! Voluptates, quasi doloribus repudiandae dolores, harum repellat ipsam sint nobis, voluptatum impedit quaerat reprehenderit sit exercitationem cupiditate corporis placeat quia! Porro quod sint provident. Perferendis eligendi illo enim velit! Enim, eaque deleniti veniam adipisci at porro possimus tempora, ipsum similique molestiae doloremque hic quam nulla vero quae expedita quaerat. Cum deserunt rerum dolorem porro nesciunt atque fugit dolor quaerat? Velit blanditiis harum iste repellat perferendis, maxime magnam quas nesciunt quos perspiciatis minus! Facilis, maiores. Alias placeat, ex aliquid recusandae natus vel, eum quia tempora dolore deleniti, nisi voluptate a quae suscipit id officia optio provident tenetur nesciunt perspiciatis ea. Blanditiis nihil a architecto illo quisquam consectetur nostrum vitae. Nulla libero reprehenderit voluptatum similique praesentium officia nostrum! Quam dolore dolor asperiores sint optio possimus incidunt esse, labore ea. Nostrum ab pariatur sunt temporibus laudantium dolor nisi, suscipit atque cum fugiat ipsam qui hic expedita inventore quas repellendus aperiam debitis ex ducimus maxime? Iusto eveniet quibusdam explicabo vero in molestias dolorum beatae commodi molestiae laborum nulla laudantium, asperiores velit autem debitis, dolor fugiat accusantium laboriosam optio eos incidunt quis. Labore, perspiciatis fuga eos ipsam velit perferendis molestias similique totam facere esse impedit natus corrupti quia consequuntur voluptates eius? Nesciunt quibusdam ab aliquam illo sed id rerum impedit quae aspernatur. Iusto hic quasi quos similique, ducimus obcaecati distinctio magnam nobis explicabo. Et quis nemo nisi quaerat accusamus quos at ducimus molestiae doloribus id omnis incidunt fuga, nihil blanditiis. Repellendus facere omnis nobis quod perferendis illum suscipit quis doloribus! Debitis minus dolorem inventore quisquam autem perspiciatis accusantium corporis, libero expedita beatae totam hic in incidunt qui praesentium fuga nulla voluptatum ipsa? Ad nam consequatur consequuntur repellendus voluptates sint provident amet ea necessitatibus ipsa modi ex ratione, maiores culpa tenetur, molestiae facere cum esse. Facere tempore hic laudantium aliquid reiciendis voluptates molestias, explicabo porro at. Consequatur non labore dolorum ex doloribus laboriosam sed praesentium maxime, iste quos reiciendis fuga illum vitae temporibus ipsa modi nihil possimus nobis deserunt.</p>
+            </div>
+            <div id="col-2">
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente esse officiis dolores quibusdam illum quos laboriosam harum. Fuga consectetur illum dolorem maxime cumque placeat ipsam repellat minima! Voluptates, quasi doloribus repudiandae dolores, harum repellat ipsam sint nobis, voluptatum impedit quaerat reprehenderit sit exercitationem cupiditate corporis placeat quia! Porro quod sint provident. Perferendis eligendi illo enim velit! Enim, eaque deleniti veniam adipisci at porro possimus tempora, ipsum similique molestiae doloremque hic quam nulla vero quae expedita quaerat. Cum deserunt rerum dolorem porro nesciunt atque fugit dolor quaerat? Velit blanditiis harum iste repellat perferendis, maxime magnam quas nesciunt quos perspiciatis minus! Facilis, maiores. Alias placeat, ex aliquid recusandae natus vel, eum quia tempora dolore deleniti, nisi voluptate a quae suscipit id officia optio provident tenetur nesciunt perspiciatis ea. Blanditiis nihil a architecto illo quisquam consectetur nostrum vitae. Nulla libero reprehenderit voluptatum similique praesentium officia nostrum! Quam dolore dolor asperiores sint optio possimus incidunt esse, labore ea. Nostrum ab pariatur sunt temporibus laudantium dolor nisi, suscipit atque cum fugiat ipsam qui hic expedita inventore quas repellendus aperiam debitis ex ducimus maxime? Iusto eveniet quibusdam explicabo vero in molestias dolorum beatae commodi molestiae laborum nulla laudantium, asperiores velit autem debitis, dolor fugiat accusantium laboriosam optio eos incidunt quis. Labore, perspiciatis fuga eos ipsam velit perferendis molestias similique totam facere esse impedit natus corrupti quia consequuntur voluptates eius? Nesciunt quibusdam ab aliquam illo sed id rerum impedit quae aspernatur. Iusto hic quasi quos similique, ducimus obcaecati distinctio magnam nobis explicabo. Et quis nemo nisi quaerat accusamus quos at ducimus molestiae doloribus id omnis incidunt fuga, nihil blanditiis. Repellendus facere omnis nobis quod perferendis illum suscipit quis doloribus! Debitis minus dolorem inventore quisquam autem perspiciatis accusantium corporis, libero expedita beatae totam hic in incidunt qui praesentium fuga nulla voluptatum ipsa? Ad nam consequatur consequuntur repellendus voluptates sint provident amet ea necessitatibus ipsa modi ex ratione, maiores culpa tenetur, molestiae facere cum esse. Facere tempore hic laudantium aliquid reiciendis voluptates molestias, explicabo porro at. Consequatur non labore dolorum ex doloribus laboriosam sed praesentium maxime, iste quos reiciendis fuga illum vitae temporibus ipsa modi nihil possimus nobis deserunt.</p>
+            </div>
+            <div id="col-3">
+                <h2>Lorem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente esse officiis dolores quibusdam illum quos laboriosam harum. Fuga consectetur illum dolorem maxime cumque placeat ipsam repellat minima! Voluptates, quasi doloribus repudiandae dolores, harum repellat ipsam sint nobis, voluptatum impedit quaerat reprehenderit sit exercitationem cupiditate corporis placeat quia! Porro quod sint provident. Perferendis eligendi illo enim velit! Enim, eaque deleniti veniam adipisci at porro possimus tempora, ipsum similique molestiae doloremque hic quam nulla vero quae expedita quaerat.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h5>Lorem ipsum dolor sit amet.</h5>
+    </footer>
+</body>
+</html>

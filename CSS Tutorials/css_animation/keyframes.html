@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The animation code */
+        @keyframes myAnimation {
+            from{background-color: greenyellow;}
+            to{background-color: hotpink;}
+        }
+
+        /* The element to apply the animation to */
+        div {
+            width: 10rem;
+            height: 10rem;
+            background-color: indigo;
+            animation-name: myAnimation;
+            animation-duration: 4s;
+        }
+    </style>
+</head>
+
+<body>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+    <div></div>
+
+    <p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+</body>
+
+</html>

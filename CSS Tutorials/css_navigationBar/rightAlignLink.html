@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            
+            overflow: hidden;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 1.3rem;
+            color: white;
+        }
+        li a:hover:not(.active) {
+            background-color: gray;
+        }
+        li a.active {
+            background-color: yellowgreen;
+        }
+        li.right {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="right"><a href="#about">About</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        input {
+            width: 100%;
+            margin: 5px;
+            padding: 8px 3px;
+            box-sizing: border-box;
+            border: 2px solid green;
+            border-radius: 5px;
+
+            /* colored input */
+            background-color: rgb(185, 212, 203);
+            color: brown;
+        }
+        input[type=password] {
+            border: none;
+            border-bottom: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label for="name">Your Name: </label>
+        <input type="text" id="name" name="name">
+        <label for="inst">Your Institude: </label>
+        <input type="text" id="inst" name="institude">
+        <label for="pass">Your password: </label>
+        <input type="password" id="pass" name="password">
+    </form>
+</body>
+</html>

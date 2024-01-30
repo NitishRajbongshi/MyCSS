@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div.gallery {
+            border: 1px solid lightgray;
+        }
+        div.gallery:hover {
+            box-shadow: 3px 3px 5px gray;
+        }
+        div.gallery:hover img {
+            opacity: 0.8;
+        }
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        div.disc {
+            text-align: center;
+            padding: 12px;
+        }
+        .responsive {
+            float: left;
+            width: 25%;
+            padding: 0 5px;
+            margin-bottom: 20px;
+        }
+        /* responsive */
+        @media screen and (max-width: 700px) {
+            div.responsive {
+                width: 50%;
+                margin: 5px 0;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            div.responsive {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            width: 50%;
+        }
+        p.content, div.content {
+            margin: 20px 4px;
+        }
+        p.content, div.content {
+            text-indent: 25px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa exercitationem laboriosam debitis officia impedit aperiam quae pariatur nesciunt delectus fugit, in aspernatur repellendus alias mollitia nulla neque dignissimos eveniet illum distinctio. Vel, cupiditate quo.</p>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="..//images//img_5terre.jpg" target="_blank">
+                <img src="..//images//img_5terre.jpg" alt="img" width="200px" height="140px">
+            </a>
+            <div class="disc">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="..//images//img_forest.jpg" target="_blank">
+                <img src="..//images//img_forest.jpg" alt="img" width="200px" height="140px">
+            </a>
+            <div class="disc">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="..//images//img_lights.jpg" target="_blank">
+                <img src="..//images//img_lights.jpg" alt="img" width="200px" height="140px">
+            </a>
+            <div class="disc">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="..//images//img_mountains.jpg" target="_blank">
+                <img src="..//images//img_mountains.jpg" alt="img" width="200px" height="140px">
+            </a>
+            <div class="disc">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+    <div class="content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut atque minima error vitae, laboriosam consectetur quae ducimus quia, tempore culpa dignissimos similique facilis eligendi! Ipsum ratione ex architecto illo odit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit cumque quis nemo deserunt pariatur numquam facere? Officia mollitia aspernatur non est ullam esse beatae quam corporis facere excepturi, harum laboriosam odio iste, et dolorem, voluptate officiis nostrum error. Vero impedit repellendus maxime distinctio?</p>
+    </div>
+</body>
+</html>

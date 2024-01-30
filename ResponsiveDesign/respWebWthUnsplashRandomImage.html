@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /* header design */
+        div.header {
+            font-size: 1.5rem;
+            text-align: center;
+            width: 100%;
+            padding: 40px;
+            background-color: #b1b7f1;
+        }
+
+        /* navbar design */
+        div.navbar {
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+        }
+
+        /* navbar link design */
+        div.navbar a {
+            text-decoration: none;
+            padding: 14px 10px;
+            color: white;
+        }
+
+        /* navbar link hover effect */
+        div.navbar a:hover {
+            background-color: rgb(108, 121, 95);
+        }
+
+        /* main content */
+        div.flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 2px 0px;
+        }
+
+        /* design for sidebar */
+        div.side-bar {
+            flex: 30%;
+            background-color: #c5ceee;
+            padding: 20px;
+        }
+
+        /* main page design */
+        .main {
+            flex: 70%;
+            padding: 20px;
+            background-color: hsl(219deg 48% 85%);
+        }
+
+        .profile-img img {
+            width: 100%;
+            max-height: 260px;
+        }
+
+        .more-img img {
+            max-height: 200px;
+            width: 100%;
+        }
+
+        .content-img img {
+            max-height: 400px;
+            width: 100%;
+        }
+
+        div.footer {
+            width: 100%;
+            background-color: rgb(21, 23, 26);
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 2px 0px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            div.navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <h2>My Website</h2>
+        <p>This a website using <b>Flexbox</b></p>
+    </div>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Download</a>
+        <a href="#">Version</a>
+    </div>
+
+    <!-- main content -->
+    <div class="flex-container">
+        <div class="side-bar">
+            <h3>About Me</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="profile-img"><img src="https://source.unsplash.com/WLUHO9A_xik/1600x900" alt="profile image">
+            </div>
+            <p>More</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate saepe doloribus inventore!</p>
+            <div class="more-img"><img src="https://source.unsplash.com/random/800x600" alt="some image"></div>
+            <div class="more-img"><img src="https://source.unsplash.com/random/800x600" alt="some image"></div>
+            <div class="more-img"><img src="https://source.unsplash.com/random/800x600" alt="some image"></div>
+        </div>
+        <div class="main">
+            <h3>Title Heading</h3>
+            <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, quo. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Libero architecto facilis sit expedita esse tempora, autem ipsam
+                temporibus non debitis obcaecati magnam!</h5>
+            <div class="content-img"><img src="https://source.unsplash.com/random/1600x900" alt="content image"></div>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, itaque culpa dignissimos fugit non
+                magni impedit deleniti molestiae, asperiores aspernatur consequatur, aperiam dicta! Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit. Nesciunt illo eaque molestiae hic itaque? Ea ipsa repellat
+                quaerat minima nam illum neque tempore maxime! Odio sunt ex nemo aspernatur sit magnam quos harum!</p>
+            <h3>Title Heading</h3>
+            <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, quo.</h5>
+            <div class="content-img"><img src="https://source.unsplash.com/user/erondu/1600x900" alt="content image">
+            </div>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, itaque culpa dignissimos fugit non
+                magni impedit deleniti molestiae, asperiores aspernatur consequatur, aperiam dicta!</p>
+            <h3>Title Heading</h3>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum praesentium ipsum voluptas quis
+                inventore nobis ad, rem voluptates nisi ex qui.</h5>
+            <div class="content-img"><img src="https://source.unsplash.com/weekly?water/1600x900" alt="content image">
+            </div>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, itaque culpa dignissimos fugit non
+                magni impedit deleniti molestiae, asperiores aspernatur consequatur, aperiam dicta!</p>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium nam illum ipsa, blanditiis id, vel,
+            porro delectus culpa voluptatibus assumenda saepe optio illo!</p>
+    </div>
+</body>
+
+</html>

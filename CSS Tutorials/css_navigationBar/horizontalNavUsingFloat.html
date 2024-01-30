@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0; 
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(224, 191, 180);
+        }
+        li {
+            float: left;
+        }
+        li a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 12px;
+            font-size: 1.3rem;
+        }
+        li a#active {
+            background-color: rgb(164, 180, 206);
+        }
+        li a:hover:not(#active) {
+            background-color: honeydew;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home" id="active">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#version">Version</a></li>
+    </ul>
+    <p><b>Note:</b> If a !DOCTYPE is not specified, floating items can produce unexpected results.</p>
+    <p>A background color is added to the links to show the link area. The whole link area is clickable, 
+        not just the text.</p>
+    <p><b>Note:</b> overflow:hidden is added to the ul element to prevent li elements from going outside 
+        of the list.</p>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text in transparent box</title>
+    <style>
+        div.background {
+            background: url(..//images//pineapple.jpg) repeat;
+            border: 1px solid black;
+            height: auto;
+        }
+        div.transbox {
+            margin: 30px;
+            border: 1px solid black;
+            background: rgba(207, 59, 200, 0.3);
+        }
+        div.transbox p {
+            font-weight: bold;
+            font-size: 25px;
+            margin: 8%;
+            text-align: center;
+            color: rgb(10, 1, 61);
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="transbox">
+            <p>write some text here</p>
+        </div>
+    </div>
+</body>
+</html>

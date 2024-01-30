@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #043834;
+        }
+        div.navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+        }
+        ul.navigation li {
+            font-size: 22px;
+            font-family: 'Goldman', cursive;
+            padding: 6px 12px;
+            background-color: transparent;
+        }
+        li.item:hover {
+            text-decoration: underline rgb(61, 92, 228);
+        }
+        /* background imgage */
+        header::before {
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        section {
+            height: 230px;
+            font-family: 'Nunito Sans', sans-serif;
+            margin: 75px 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="navigation">
+                <li class="item" id="item1">Home</li>
+                <li class="item" id="item2">Contact us</li>
+                <li class="item" id="item3">About us</li>
+                <li class="item" id="item4">Version</li>
+            </ul>
+        </div>
+    </header>
+    <section class="section">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dignissimos, consequatur vel dolores fugiat nisi nihil in quidem molestias, nemo cum impedit nam unde veritatis fugit architecto? Accusantium veniam aut eum nihil odio. Quaerat!</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: lightgrey;
+        }
+
+        li a {
+            display: block;
+            padding: 5px 12px;
+            text-decoration: none;
+            color: #000;
+            font-size: 1.4rem;
+        }
+        li a:hover:not(#active) {
+            /* set the hover property but not in active link */
+            background-color: gray;
+            color: white;
+        }
+        li a#active {
+            background-color: rgb(82, 185, 82);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home" id="active">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#version">Version</a></li>
+    </ul>
+</body>
+</html>
